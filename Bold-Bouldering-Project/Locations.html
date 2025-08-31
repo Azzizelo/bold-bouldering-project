@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore top bouldering locations across Ireland with Bold Bouldering.">
+  <meta name="keywords" content="Bouldering, Climbing, Ireland, Locations, Outdoor Adventure">
+  <meta name="author" content="Your Name">
+  <title>Locations | Bold Bouldering</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Images/Logo-Image.webp">
+
+  <style>
+    /* Internal CSS example */
+    .map-section, .video-section {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.95);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .location-description {
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    .video-section p {
+      font-size: 1.1em;
+    }
+
+    iframe {
+      width: 80%;
+      max-width: 100%;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="Images/Logo-Image.webp" alt="Bold Bouldering Logo" style="max-width: 100px">
+    <h1>Bold Bouldering</h1>
+    <p>Your guide to Ireland’s top climbing spots</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="AboutUs.html">About</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container">
+
+    <section>
+      <h2>Explore Ireland’s Bouldering Hotspots</h2>
+      <p class="location-description">
+        Ireland is full of hidden climbing gems, from rugged coastal cliffs to serene forest valleys. Discover routes for all skill levels and enjoy the breathtaking scenery each location has to offer.
+      </p>
+    </section>
+
+    <section class="popular-areas">
+      <div class="area-card">
+        <div class="area-img-wrapper">
+          <img src="Images/Doolin.jpg" alt="Doolin Climbing">
+        </div>
+        <div class="area-content">
+          <h4>Doolin 🪨</h4>
+          <p>Seaside bouldering with limestone formations, offering routes for beginners and experts alike. Don’t miss the views of the Aran Islands!</p>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <div class="area-img-wrapper">
+          <img src="Images/climbing2.webp" alt="The Scalp Climbing">
+        </div>
+        <div class="area-content">
+          <h4>The Scalp 🌄</h4>
+          <p>Located near Dublin, this rugged area provides steep climbs and stunning granite formations, ideal for adventurous climbers.</p>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <div class="area-img-wrapper">
+          <img src="Images/black-valley.webp" alt="Black Valley Climbing">
+        </div>
+        <div class="area-content">
+          <h4>Black Valley 🌿</h4>
+          <p>Peaceful, beginner-friendly bouldering in the heart of Killarney National Park, surrounded by Ireland’s lush landscapes.</p>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <div class="area-img-wrapper">
+          <img src="Images/wicklow.jpg" alt="Wicklow Mountains Climbing">
+        </div>
+        <div class="area-content">
+          <h4>Wicklow Mountains 🏔️</h4>
+          <p>Challenging climbs with breathtaking highland scenery. Ideal for climbers looking for variety and adventure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-map-section">
+      <h3 style="text-align: center; margin-top: 40px;">🎥 Bouldering in Doolin</h3>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 20px auto;">
+        Experience the beauty and challenge of bouldering in Doolin, Ireland. This video showcases some of the best beginner-friendly routes in the area, set against the stunning Irish landscape.
+      </p>
+
+      <!-- Video Embed -->
+      <iframe src="https://www.youtube.com/embed/wmQfwiSMAKw" title="Unreal Bouldering in Doolin, Ireland (Beginner-Friendly)" height="450" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <!-- Map Embed -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.1931284475375!2d-9.278629484169217!3d53.00666797998165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b878a82ff34b5%3A0x82d3a8e5d9b6f72f!2sDoolin%2C%20Ireland!5e0!3m2!1sen!2sus!4v1692131559612!5m2!1sen!2sus" height="400" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Bold Bouldering | This is a College Project</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
